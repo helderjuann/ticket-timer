@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poetsen One", sans-serif;
+}
+
+body {
+    background-color: #a10da1;
+}
+
+main {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container, footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 4%;
+}
+
+.container p {
+    color: #fde935;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    max-width: 200px;
+}
+
+label {
+    margin-bottom: 12px;
+}
+
+p, footer {
+    margin-top: 12px;
+    text-align: center;
+}
+
+button {
+    background-color: #662796;
+    cursor: pointer;
+    color: white;
+    transition: 350ms ease-in-out;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #fde935;
+    color: black;
+}
+
+label, p, footer {
+    color: white;
+    font-size: 24px;
+}
+
+.container input {
+    margin-bottom: 8px;
+    outline: 0;
+}
+
+.container :where(input, button) {
+    padding: 10px 0;
+    max-width: 300px;
+    border: 2px solid #b46fe9;
+    outline: 0;
+}
+
+.container :where(label, input, button) {
+    width: 100%;
+    text-align: center;
+}
